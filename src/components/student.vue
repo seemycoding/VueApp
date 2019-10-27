@@ -96,7 +96,7 @@ export default {
     try {
       this.options = await DataService.GetCourses();
     } catch (error) {
-      alert("No Data");
+       alert("Please connect backend first");
     }
   },
   validations: {

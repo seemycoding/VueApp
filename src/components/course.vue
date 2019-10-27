@@ -64,10 +64,10 @@
 <script>
 import { required } from "vuelidate/lib/validators";
 import DataService from "../services/dataservices";
-// import { validationMixin } from 'vuelidate'
+
 export default {
   name: "course",
-  // mixins: [validationMixin],
+
   data() {
     return {
       id: "",
@@ -84,7 +84,7 @@ export default {
         try {
           this.options = await DataService.GetStudents();
         } catch (error) {
-          alert("No Data");
+          alert("Please connect backend first");
         }
       },
   validations: {
