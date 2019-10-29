@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/api/";
+const url = "http://23.99.225.78:3000/api/";
 import axios from "axios";
 class DataService {
   //Add Student
